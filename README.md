@@ -56,8 +56,8 @@ This is a RESTful API-based backend for a Chapter Performance Dashboard. It allo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/whotfvasu/mathongo.git
+   cd mathongo
    ```
 
 2. Install dependencies:
