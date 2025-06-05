@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "38ec2506-29eb-4a39-a42c-9284a8ba6765",
+		"name": "Chapter Performance Dashboard API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39092499"
+	},
+	"item": [
+		{
+			"name": "/api/v1/chapters",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/chapters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-admin",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"subject\": \"Physics\",\n    \"chapter\": \"Mathematics in Physics\",\n    \"class\": \"Class 11\",\n    \"unit\": \"Mechanics 1\",\n    \"yearWiseQuestionCount\": {\n      \"2019\": 0,\n      \"2020\": 2,\n      \"2021\": 5,\n      \"2022\": 5,\n      \"2023\": 3,\n      \"2024\": 7,\n      \"2025\": 6\n    },\n    \"questionSolved\": 0,\n    \"status\": \"Not Started\",\n    \"isWeakChapter\": false\n  },\n  {\n    \"subject\": \"Physics\",\n    \"chapter\": \"Units and Dimensions\",\n    \"class\": \"Class 11\",\n    \"unit\": \"Mechanics 1\",\n    \"yearWiseQuestionCount\": {\n      \"2019\": 2,\n      \"2020\": 6,\n      \"2021\": 8,\n      \"2022\": 4,\n      \"2023\": 6,\n      \"2024\": 3,\n      \"2025\": 10\n    },\n    \"questionSolved\": 39,\n    \"status\": \"Completed\",\n    \"isWeakChapter\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/chapters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"chapters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/chapters/:id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
