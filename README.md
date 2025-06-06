@@ -147,7 +147,7 @@ The app is deployed on Render and can be accessed at:
 
 ## Postman Collection
 
-A Postman collection containing all routes is included in the repository as `postman_collection.json`.
+A Postman collection containing all routes is included in the repository as `Chapter Performance Dashboard API.postman_collection.json`.
 
 ---
 
